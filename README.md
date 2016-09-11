@@ -7,14 +7,14 @@ This is a pre-compiled kernel referenced in this reddit https://www.reddit.com/r
 
 #### Working
 * Touchscreen with fingers and pen (When paired)
-    * Touchscreen needs setup with windows binaries. (see bellow)
+   * Touchscreen needs setup with windows binaries. (see bellow)
 * Keyboard cover with touchpad
 
 #### Not Working
 * Power, and Volume hard buttons
 * Cannot resume once lid/keyboard is closed
 * Touchpad doesn't work properly if keyboard cover is detached then reattached.
---* "Adds one finger" actions that normally require one finger (including moving cursor) now take 2 fingers. Actions that require 2 fingers now require 3 fingers.
+   * "Adds one finger" actions that normally require one finger (including moving cursor) now take 2 fingers. Actions that require 2 fingers now require 3 fingers.
 
 #### Untested
 * Wifi fix
