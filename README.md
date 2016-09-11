@@ -39,13 +39,9 @@ This is a kernel I compiled myself. It was cloned from this github repository ht
 These binaries are essential to getting the touchscreen to work.
 Copy all of them into /itouch.
 Add symbolic links.
-
 sudo ln -s iaPreciseTouchDescriptor.bin /itouch/integ_descriptor.bin
-
 sudo ln -s SurfaceTouchServicingSFTConfigMSHW0078.bin /itouch/integ_sft_cfg_skl.bin
-
 sudo ln -s SurfaceTouchServicingDescriptorMSHW0078.bin /itouch/vendor_descriptor.bin
-
 sudo ln -s SurfaceTouchServicingKernelSKLMSHW0078.bin /itouch/vendor_kernel_skl.bin
 
 
