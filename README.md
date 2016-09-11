@@ -3,10 +3,10 @@
 ## This repository is a collection of kernels and libs for the Microsoft Surface Pro 4. It's mainly for myself and this README will serve as a notes area for what is and is not working.
 
 ### adra_kernel
-This is a pre-compiled kernel referenced in this reddit https://www.reddit.com/r/SurfaceLinux/comments/4vbzki/androidx86_with_the_new_ipts_driver/?sort=old. I believe it is based off of this github repository https://github.com/ipts-linux-org/ipts-linux. It is said to have touchscreen support, wifi fix and lid patches.
+This is a pre-compiled kernel referenced in this reddit https://www.reddit.com/r/SurfaceLinux/comments/4vbzki/androidx86_with_the_new_ipts_driver. I believe it is based off of this github repository https://github.com/ipts-linux-org/ipts-linux. It is said to have touchscreen support, wifi fix and lid patches.
 
 #### Working
-* Touchscreen with fingers and pen (When paired)
+* Touchscreen with fingers and pen
    * Touchscreen needs setup with windows binaries. (see bellow)
 * Keyboard cover with touchpad
 
@@ -24,7 +24,7 @@ This is a pre-compiled kernel referenced in this reddit https://www.reddit.com/r
 This is a kernel I compiled myself. It was cloned from this github repository https://github.com/jimdigriz/ipts-linux.
 
 #### Working
-* Touchscreen only with pen (When paired)
+* Touchscreen only with pen
   * Touchscreen needs setup with windows binaries. (see bellow)
 * Keyboard cover with touchpad
 * Power and Volume hard buttons
@@ -68,3 +68,8 @@ To get the pen working it's best use wacom drivers. Copy all files into /usr/sha
 
 #### Not Working
 * Eraser button
+
+### 20-intel.conf
+Xorg config to reduce disaply blinking on certains applications. Reference https://www.reddit.com/r/SurfaceLinux/comments/4t64zt/getting_the_sp4_running_with_ubuntu_1604/
+
+Copy 20-intel.conf to /usr/share/X11/xorg.conf/d/
