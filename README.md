@@ -6,8 +6,8 @@
 This is a pre-compiled kernel referenced in this reddit https://www.reddit.com/r/SurfaceLinux/comments/4vbzki/androidx86_with_the_new_ipts_driver/?sort=old. I believe it is based off of this github repository https://github.com/ipts-linux-org/ipts-linux. It is said to have touchscreen support, wifi fix and lid patches.
 
 #### Working
-1. Touchscreen with fingers and pen (When paired)
-..* Touchscreen needs setup with windows binaries. (see bellow)
+* Touchscreen with fingers and pen (When paired)
+...* Touchscreen needs setup with windows binaries. (see bellow)
 * Keyboard cover with touchpad
 
 #### Not Working
