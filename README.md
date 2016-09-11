@@ -35,6 +35,9 @@ This is a kernel I compiled myself. It was cloned from this github repository ht
 * Touchpad doesn't work properly if keyboard cover is detached then reattached.
   * "Adds one finger" actions that normally require one finger (including moving cursor) now take 2 fingers. Actions that require 2 fingers now require 3 fingers.
 
+### touch_dependencies
+These are the files needed to make the touchscreen work
+
 #### windows_binaries
 These binaries are essential to getting the touchscreen to work.
 Copy all of them into /itouch.
@@ -48,6 +51,12 @@ sudo ln -s SurfaceTouchServicingDescriptorMSHW0078.bin /itouch/vendor_descriptor
 
 sudo ln -s SurfaceTouchServicingKernelSKLMSHW0078.bin /itouch/vendor_kernel_skl.bin
 
+####  i915_GuC_firmware
+This is specific firmware form the IPTS
+Copy skl_guc_ver4.bin to /lib/firmware/i915/skl_guc_ver4.bin.
+Then add the symbolic link
+
+sudo ln -s /lib/firmware/i915/skl_guc_ver4.bin /lib/firmware/i915/skl_guc_ver4_3.bin
 
 ### surface_pen
 To get the pen working it's best use wacom drivers. Copy all files into /usr/share/X11/xorg.conf.d or /etc/X11/xorg.conf.d. /usr/share/X11/xorg.conf.d may get overwritten during an update. Reference https://m.reddit.com/r/SurfaceLinux/comments/422la9/sp3_help_getting_pen_input_to_work_properly/.
