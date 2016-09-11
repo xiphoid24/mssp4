@@ -14,7 +14,7 @@ This is a pre-compiled kernel referenced in this reddit https://www.reddit.com/r
 * Power, and Volume hard buttons
 * Cannot resume once lid/keyboard is closed
 * Touchpad doesn't work properly if keyboard cover is detached then reattached.
-   * "Adds one finger" actions that normally require one finger (including moving cursor) now take 2 fingers. Actions that require 2 fingers now require 3 fingers.
+  * "Adds one finger" actions that normally require one finger (including moving cursor) now take 2 fingers. Actions that require 2 fingers now require 3 fingers.
 
 #### Untested
 * Wifi fix
@@ -33,15 +33,19 @@ This is a kernel I compiled myself. It was cloned from this github repository ht
 * Touchscreen does not work with fingers
 * Cannot resume once lid/keyboard is closed
 * Touchpad doesn't work properly if keyboard cover is detached then reattached.
---* "Adds one finger" actions that normally require one finger (including moving cursor) now take 2 fingers. Actions that require 2 fingers now require 3 fingers.
+  * "Adds one finger" actions that normally require one finger (including moving cursor) now take 2 fingers. Actions that require 2 fingers now require 3 fingers.
 
 #### windows_binaries
 These binaries are essential to getting the touchscreen to work.
 Copy all of them into /itouch.
 Add symbolic links.
+
 sudo ln -s iaPreciseTouchDescriptor.bin /itouch/integ_descriptor.bin
+
 sudo ln -s SurfaceTouchServicingSFTConfigMSHW0078.bin /itouch/integ_sft_cfg_skl.bin
+
 sudo ln -s SurfaceTouchServicingDescriptorMSHW0078.bin /itouch/vendor_descriptor.bin
+
 sudo ln -s SurfaceTouchServicingKernelSKLMSHW0078.bin /itouch/vendor_kernel_skl.bin
 
 
