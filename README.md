@@ -25,7 +25,7 @@ This is a kernel I compiled myself. It was cloned from this github repository ht
 
 #### Working
 * Touchscreen only with pen (When paired)
-..* Touchscreen needs setup with windows binaries. (see bellow)
+  * Touchscreen needs setup with windows binaries. (see bellow)
 * Keyboard cover with touchpad
 * Power and Volume hard buttons
 
@@ -39,10 +39,15 @@ This is a kernel I compiled myself. It was cloned from this github repository ht
 These binaries are essential to getting the touchscreen to work.
 Copy all of them into /itouch.
 Add symbolic links.
+
 sudo ln -s iaPreciseTouchDescriptor.bin /itouch/integ_descriptor.bin
+
 sudo ln -s SurfaceTouchServicingSFTConfigMSHW0078.bin /itouch/integ_sft_cfg_skl.bin
+
 sudo ln -s SurfaceTouchServicingDescriptorMSHW0078.bin /itouch/vendor_descriptor.bin
+
 sudo ln -s SurfaceTouchServicingKernelSKLMSHW0078.bin /itouch/vendor_kernel_skl.bin
+
 
 ### surface_pen
 To get the pen working it's best use wacom drivers. Copy all files into /usr/share/X11/xorg.conf.d or /etc/X11/xorg.conf.d. /usr/share/X11/xorg.conf.d may get overwritten during an update. Reference https://m.reddit.com/r/SurfaceLinux/comments/422la9/sp3_help_getting_pen_input_to_work_properly/.
