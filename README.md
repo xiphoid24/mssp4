@@ -7,7 +7,7 @@ This is a pre-compiled kernel referenced in this reddit https://www.reddit.com/r
 
 #### Working
 * Touchscreen with fingers and pen (When paired)
-...* Touchscreen needs setup with windows binaries. (see bellow)
+    * Touchscreen needs setup with windows binaries. (see bellow)
 * Keyboard cover with touchpad
 
 #### Not Working
